@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    users:
+      url: http://localhost:8000
+
+ribbon:
+  eureka:
+    enabled: false
+logger:
+  level: DEBUG
