@@ -1,1 +1,7 @@
-server.port: 8100
+server:
+  port: 8100
+  tomcat:
+    basedir: target/tomcat-logs
+    accesslog:
+      enabled: true
+      pattern: "%t %a %r %s (%D ms)"

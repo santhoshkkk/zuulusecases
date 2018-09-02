@@ -2,6 +2,10 @@ zuul:
   routes:
     users:
       url: http://localhost:8000
+    account:
+      url: http://localhost:8100
+
+
 
 ribbon:
   eureka:
