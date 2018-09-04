@@ -4,6 +4,9 @@ zuul:
       url: http://localhost:8000
     account:
       url: http://localhost:8100
+    useraccount:
+      #dummy configuration
+      url: http://localhost:8080
 
 
 
