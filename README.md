@@ -3,7 +3,7 @@ Example project for demonstrating different zuul use cases
 
 
 
-##Simple redirect
+## Simple redirect
 Consider the user service running on port 8000 which fetches user by name.
 `GET http://localhost:8000/santhosh`
 Response:```{“name":"sant","age":28}```
@@ -26,7 +26,7 @@ zuul:
 
 Note that you don’t need to add a custom filter for this. The built in `Routing Filters` does the job for you.
 
-##Redirect to a custom url
+## Redirect to a custom url
 There are cases when the URL has to be rewritten. 
 Consider the following example, 
 Bank service running on port 8100 has the following Rest endpoint to fetch the user accounts details by username.
@@ -60,7 +60,7 @@ try {
 Have look at the `UrlRewriteFilter.java` 
 
 
-##Implementing a facade API 
+## Implementing a facade API 
 Implementing a facade by invoking multiple urls and customising the response
 
 There are cases when a gateway may need to call multiple urls and then merge the response.
